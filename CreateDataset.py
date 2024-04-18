@@ -17,7 +17,7 @@ data = []
 labels = []
 
 for cPath in os.listdir(dataDir):
-    #print (cPath)
+    print (cPath)
     for imgPath in os.listdir(os.path.join(dataDir, cPath)):
         data_aux = []
         img = cv2.imread(os.path.join(dataDir, cPath, imgPath))
